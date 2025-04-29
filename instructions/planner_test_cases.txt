@@ -1,0 +1,39 @@
+Test Case 1:
+Task: Search for 'python programming' on Google and click the first result
+Plan: Search for 'python programming' on Google --> click the first result /* Fully sequential */
+
+Test Case 2:
+Task: What are people talking about on r/securityguards, r/AskLE, and r/protectandserve.
+Plan: launch_subtask(get latest discussion topics from <URL of $subreddit>) for $subreddit in [r/securityguards, r/AskLE, and r/protectandserve] /* each subreddit has its own page and may be individually expensive to access and process */ --> get_subtask_results of all subreddits to summarize the latest discussion topics
+
+Test Case 3:
+Task: Look up the 3 most popular programming languages, then tell me who created each one
+Plan: first find top 3 most popular programming languages --> launch_subtask(find creator of $language, <URL of Wikipedia article for $language>) for $language in <list of 3 languages> /* parallelize because creator info will likely come from separate pages */ --> get_subtask_results to present creators
+
+Test Case 4:
+Task: Search for top 5 restaurants in San Francisco, open each one's google reviews, and collect their ratings
+Plan: first search for top 5 restaurants in San Francisco --> launch_subtask(open google reviews for $restaurant, with initial search query for $restaurant) for $restaurant in <list of top 5 restaurants> /* parallelize because each restaurant's reviews are likely on separate pages */ --> get_subtask_results to collect and summarize ratings from all restaurants
+
+Test Case 5:
+Task: Kyrie: tell me his points, assists, rebounds, steals, blocks, turnovers, and field goal percentage in the last 5 games
+Plan: search for Kyrie's stats for last 5 games --> get points, assists, rebounds, steals, blocks, turnovers, and field goal percentage /* not parallelizing because all the stats are likely on the same web page */
+
+Test Case 6:
+Task: On GitHub: search for top repositories in Python, JavaScript, and Go
+Plan: launch_subtask(search for top repositories in $language on GitHub) for $language in [Python, JavaScript, Go] /* each language search is a unique query/page on GitHub */ --> get_subtask_results to summarize the top repositories for each language
+
+Test Case 7:
+Task: Research the latest news about artificial intelligence
+Plan: search for latest news about artificial intelligence --> launch_subtask(summarize article about $title on <initial URL>) for $title in <list of articles> /* each article is likely on a separate page and the task requires research which involves not just a search but going into the articles */ --> get_subtask_results to summarize the key points from all articles
+
+Test Case 8:
+Task: Compare the latest iPhone, Samsung Galaxy, and Google Pixel models
+Plan: launch_subtask(evaluate the latest $phone model, initial search query for $phone) for $phone in [iPhone, Samsung Galaxy, Google Pixel] /* each phone model is likely on a separate page */ --> get_subtask_results to compare the latest models
+
+Test Case 9:
+Task: Compare the last 3 iPhone models, then check their prices on Amazon and eBay
+Plan: find last 3 iPhone models --> get_subtask_results(check price of $model on $website) for $model in <list of last 3 iPhone models> for $website in [Amazon, eBay] /* each model's price is likely on a separate page */ --> get_subtask_results to compare prices
+
+Test Case 10:
+Task: Find the top 10 AI startups and for each of their CEOs find the high school they studied at
+Plan: search for list of top 10 AI startups --> get list of CEOs of top 10 AI startups /* CEO is almost always mentioned in the same place as the company */ --> launch_subtask(find high school of $CEO if available /* ensure we exit early if information isn't found */, initial search for high school of $CEO) for $CEO in <list of CEOs> /* parallelize because each CEO's high school info will likely come from separate pages */ --> get_subtask_results to summarize the high schools of all CEOs

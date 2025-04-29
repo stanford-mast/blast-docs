@@ -1,0 +1,274 @@
+Find the top 10 AI startups and for each of their CEOs find the high school they studied at
+
+Manus AI - 15:34
+6:49 AM on 4/26/25
+Browser-use: 476s
+BLAST: 324s
+
+1. Abridge
+   CEO: Shiv Rao
+   High School: Not found (Grew up in Pittsburgh, but no school name available)
+2. Anthropic
+   CEO: Dario Amodei
+   High School: Lowell High School (San Francisco, CA)
+3. Anysphere
+   CEO: Michael Truell
+   High School: Horace Mann School
+4. Baseten
+   CEO: Tuhin Srivastava
+   High School: Normanhurst
+5. Captions
+   CEO: Gaurav Misra
+   High School: G.D. Goenka Public School
+6. Clay
+   CEO: Kareem Amin
+   High School: International School of Choueifat
+7. Coactive AI
+   CEO: Cody Coleman
+   High School: Winslow Township High School
+8. Cohere
+   CEO: Aidan Gomez
+   High School: Not found (Only university education publicly available)
+9. Crusoe
+   CEO: Chase Lochmiller
+   High School: Not found (Denver area, but no specific school listed)
+10. Databricks
+    CEO: Ali Ghodsi
+    High School: Not found (No published source with school name)
+
+Summary: For 6 out of the 10 top AI startups, both CEO and their high school are confirmed. For 4, the high school is not available in public sources.
+
+BLAST:
+
+Ultimate task complete. Here are the top 10 AI startups and the high schools their CEOs attended (where available): 1. OpenAI (CEO: Sam Altman) - John Burroughs School 2. Anthropic (CEO: Dario Amodei) - Lowell High School 3. Databricks (CEO: Ali Ghodsi) - High school in Sweden (specific school name not publicly available) 4. Anysphere (CEO: Michael Truell) - Horace Mann School 5. Mercor (CEO: Brendan Foody) - Bellarmine High School (San Jose, CA) 6. Thinking Machine Labs (CEO: Mira Murati) - Pearson College UWC (Lester B. Pearson United World College of the Pacific, Canada) 7. World Labs (CEO: Fei-Fei Li) - Parsippany High School & Chengdu No.7 High School (China) 8. Cohere (CEO: Aidan Gomez) - No public information available about high school 9. Writer (CEO: May Habib) - No public information available about high school 10. xAI (CEO: Elon Musk) - Bryanston High School & Pretoria Boys High School (South Africa); main graduation: Pretoria Boys High School All publicly available high school information has been provided for each CEO; for some, the high school was not discoverable. Task successfully completed.
+
+
+Q1: where did the CEOs of the 10 largest space stocks right now go to college
+
+174s
+2:54 - BLAST
+
+Here are the colleges attended by the CEOs of the 10 largest space stocks (2025): 1. Lockheed Martin (Jim Taiclet): United States Air Force Academy (BS), Princeton University (MS, MBA) 2. AST SpaceMobile (Abel Avellan): Universidad Simón Bolívar (BS) 3. Rocket Lab USA (Sir Peter Beck): No college/university degree 4. L3Harris (Christopher E. Kubasik): University of Maryland (BS, MBA) 5. Leidos Holdings (Tom Bell): Louisiana State University (BS) 6. Boeing (Kelly Ortberg): University of Iowa (BS) 7. Redwire Corporation (Peter Cannito): University of Delaware (BS Finance), University of Maryland (MBA) 8. Virgin Galactic (Michael Colglazier): Stanford University (BS Industrial Engineering), Harvard Business School (MBA) 9. Intuitive Machines (Stephen Altemus): Embry-Riddle Aeronautical University (BS Aeronautical Engineering), University of Central Florida (MS Engineering Management) 10. Spire Global (Theresa Condor): Cornell University (BA Government), Columbia University SIPA (Master's in International Affairs) Task complete. This is a current and vetted list with university details for each CEO as of 2025.
+
+8:24 - Manus
+
+https://manus.im/share/jzRaqwXFV01JAAYlgBQevl?replay=1
+
+5:38 - browser_use
+
+Where did the CEOs of the 10 largest space stocks (as of 2025) go to college? Here are the answers based on current rankings and company leaders:
+
+1. Lockheed Martin – Jim Taiclet: U.S. Air Force Academy (undergrad), Princeton University (master's)
+2. AST SpaceMobile – Abel Avellan: Universidad Simón Bolívar (undergrad, Venezuela)
+3. Rocket Lab USA – Peter Beck: Did not attend college (no degree)
+4. L3Harris Technologies – Christopher E. Kubasik: University of Maryland (Robert H. Smith School of Business, B.S.)
+5. Leidos Holdings – Tom Bell: Louisiana State University (B.A.), Florida Institute of Technology (MBA)
+6. Boeing – Kelly Ortberg: University of Iowa (B.S. Mechanical Engineering)
+7. Northrop Grumman – Kathy Warden: James Madison University (undergrad), George Washington University (MBA)
+8. Planet Labs – Will Marshall: University of Leicester (MPhys), University of Oxford (PhD)
+9. Redwire – Peter Cannito: University of Delaware (B.S. Finance), University of Maryland (MBA)
+10. Firefly Aerospace – Jason Kim: U.S. Air Force Academy, Air Force Institute of Technology, UCLA Anderson School of Management (leadership)
+
+All data as of April 2025, confirmed from reputable business, company, and university sources. Task complete!
+
+Q2: where did the CEOs of the 10 largest space stocks right now go to college and what specific college experiences most impacted them?
+
+browser_use - 399s (6:39)
+
+Ultimate Task Complete: Where did the CEOs of the 10 largest space stocks go to college, and what specific college experiences most impacted them?
+
+1. Redwire Corporation: Peter Cannito – BS, University of Delaware; MBA, University of Maryland. No detailed formative college experiences found in public sources.
+
+2. Planet Labs: Will Marshall – DPhil (PhD), University of Oxford; MSc, University of Leicester. Most impactful experience: Doctoral research in quantum physics under Nobel laureate Sir Roger Penrose and Dirk Bouwmeester, mentorship regarded as formative for career.
+
+3. Intuitive Machines: Stephen Altemus – BS, Embry-Riddle Aeronautical University; MS, Univ. of Central Florida. No significant college experience found in public sources.
+
+4. Leidos Holdings: Tom Bell – BA, Louisiana State University; MBA, Florida Institute of Technology. No impactful or formative college experiences reported.
+
+5. L3Harris Technologies: Christopher E. Kubasik – BS, University of Maryland, Smith School (’83). No notable impactful college stories found.
+
+6. Rocket Lab USA: Peter Beck – No college/university attended (built Rocket Lab without a degree, felt universities couldn’t teach what he needed).
+
+7. AST SpaceMobile: Abel Avellan – College education in Venezuela is mentioned, but neither university nor impactful experiences are specified or disclosed.
+
+8. Lockheed Martin: Jim Taiclet – US Air Force Academy (BS, Engineering & Int’l Relations); Princeton (MPA). No detailed impactful college experience reported; recognized as distinguished grad and Princeton fellow.
+
+9. Boeing: Dave Calhoun – BS in Accounting, Virginia Tech (1979). Impactful experiences: credits Tech for confidence to succeed, active in Delta Kappa Epsilon fraternity, inspired by Professor Wayne Leininger; prioritized academics, credits Tech’s social and academic environment for career prep.
+
+10. Northrop Grumman: Kathy Warden – BS Computer Information Systems & Economics, James Madison University (1992), MBA from George Washington Univ. Impactful college experiences: Perseverance through programming challenges, critical thinking, involvement in literacy and lab work, teamwork, and building confidence and resilience through setbacks. She credits JMU’s environment for fostering leadership and balance.
+
+Summary: Only 3 out of 10 CEOs (Will Marshall, Dave Calhoun, Kathy Warden) had publicly documented impactful formative college experiences; most others only have biographical college information available. For Peter Beck (Rocket Lab), his unique trajectory included skipping college altogether. All company/CEO/college and available experiences as per latest public sources as of April 2025.
+
+Manus - 32:49
+
+Educational Backgrounds and College Experiences of Top Space Stock CEOs
+Introduction
+This report examines the educational backgrounds and formative college experiences of the CEOs leading the world's 10 largest space stocks. Understanding where these influential leaders studied and what experiences shaped their development provides valuable insights into the foundations of leadership in the aerospace industry.
+The research reveals diverse educational pathways, from elite engineering schools in France to state universities in the American Midwest. While their academic journeys differ significantly, common patterns emerge in how their educational experiences influenced their leadership approaches and career trajectories.
+Executive Summary
+The CEOs of the top 10 space stocks represent a diverse range of educational backgrounds:
+Institutional Diversity: The CEOs attended a variety of institutions, from prestigious Ivy League universities (University of Pennsylvania) to public state universities (University of Iowa, James Madison University) to elite European technical schools (École Polytechnique, ISAE-SUPAERO).
+Educational Fields: Engineering and business dominate the educational backgrounds, with several CEOs holding dual degrees or combining technical undergraduate studies with business-focused graduate education.
+Formative Experiences: Many CEOs cite specific college experiences that shaped their careers, including hands-on projects, programming challenges, and entrepreneurial ventures during their university years.
+Continuing Education: Several CEOs pursued additional education beyond their initial degrees, demonstrating a commitment to lifelong learning.
+Educational Impact: Across the board, CEOs credit their education with providing not just technical knowledge but also critical thinking skills, problem-solving approaches, and leadership foundations.
+Detailed Findings
+1. H. Lawrence "Larry" Culp Jr. - General Electric (GE)
+Educational Background:
+Bachelor's degree in Economics from Washington College (Class of 1985)
+MBA from Harvard Business School
+College Experiences and Impact:
+Culp's liberal arts education at Washington College provided him with a broad foundation that has served him well throughout his career. At Washington College, he was a member of the men's lacrosse team, which likely contributed to his teamwork and leadership skills.
+His time at Harvard Business School further developed his business acumen and leadership capabilities. Culp has maintained strong ties to his alma mater, serving as a senior lecturer at Harvard Business School before becoming CEO of GE.
+Culp has credited his education with teaching him to think critically and approach problems from multiple perspectives. His liberal arts background, combined with his business education, has given him a well-rounded approach to leadership.
+2. Christopher Calio - RTX Corporation (RTX)
+Educational Background:
+Bachelor's degree from Trinity College
+JD/MBA from the University of Connecticut School of Law and School of Business
+College Experiences and Impact:
+Calio's legal and business education at the University of Connecticut provided him with a unique combination of skills that have been valuable in navigating the complex aerospace and defense industry. His dual degree program required rigorous time management and multidisciplinary thinking.
+At UConn, Calio developed a deep understanding of both legal frameworks and business principles, which has helped him navigate the heavily regulated aerospace and defense industry. His education prepared him to understand both the technical and business aspects of RTX's operations.
+3. Kelly Ortberg - Boeing (BA)
+Educational Background:
+Bachelor's degree in Mechanical Engineering from the University of Iowa (Class of 1982)
+College Experiences and Impact:
+At the University of Iowa, Ortberg developed a strong foundation in engineering principles that has guided his career in aerospace. His mechanical engineering education provided him with technical knowledge that has been essential in leading Boeing.
+Ortberg was inducted into the University of Iowa's Distinguished Engineering Alumni Academy, reflecting the significant impact of his education on his career. His engineering background has given him credibility and technical understanding in an industry where engineering excellence is paramount.
+4. Vimal Kapur - Honeywell (HON)
+Educational Background:
+Bachelor's degree in Engineering from Thapar Institute of Engineering and Technology in India
+College Experiences and Impact:
+Kapur's engineering education in India provided him with technical skills that formed the foundation of his career at Honeywell. His international educational background brings a global perspective to his leadership.
+At Thapar Institute, Kapur developed problem-solving skills and technical knowledge that have been valuable throughout his career. His education in India has given him insights into global markets and diverse approaches to engineering challenges.
+5. Guillaume Faury - Airbus (AIR.PA)
+Educational Background:
+Graduate of École Polytechnique (one of France's most prestigious engineering schools)
+Graduate of École Nationale Supérieure de l'Aéronautique et de l'Espace (ISAE-SUPAERO), specializing in aeronautics and space engineering
+Research degree from the French National High School of Aeronautics and Space
+College Experiences and Impact:
+Faury's elite French engineering education provided him with specialized knowledge in aeronautics and space engineering, directly applicable to his leadership at Airbus. The rigorous technical training at École Polytechnique and ISAE-SUPAERO gave him deep expertise in aerospace engineering.
+As a graduate of the Corps des Mines, one of France's prestigious technical civil service corps, Faury developed not only technical skills but also a sense of public service and strategic thinking. His specialized education in aeronautics has given him credibility and technical understanding in the aerospace industry.
+6. Jim Taiclet - Lockheed Martin (LMT)
+Educational Background:
+Bachelor's degree from the United States Air Force Academy
+Master's degree in Public Affairs from Princeton University's School of Public and International Affairs
+MBA from Harvard Business School
+College Experiences and Impact:
+Taiclet's education at the Air Force Academy instilled military discipline, leadership skills, and a deep understanding of defense needs. His experience as a military academy graduate gives him unique insights into the needs of defense customers.
+His graduate education at Princeton and Harvard broadened his perspective beyond military applications to include public policy and business strategy. This combination of military, public policy, and business education has prepared him well for leading a major defense contractor.
+7. Olivier Andriès - Safran (SAF.PA)
+Educational Background:
+Graduate of École Polytechnique (one of France's most prestigious engineering schools)
+Graduate of École des Mines de Paris (another elite French engineering school)
+College Experiences and Impact:
+Like Faury, Andriès received an elite French engineering education that provided him with technical expertise and analytical skills. As a graduate of the Corps des Mines, he developed both technical knowledge and strategic thinking abilities.
+The rigorous education at École Polytechnique and École des Mines prepared him for complex technical and leadership challenges in the aerospace industry. His educational background in France's grande école system has given him a strong foundation in both engineering principles and management approaches.
+8. Kathy Warden - Northrop Grumman (NOC)
+Educational Background:
+Bachelor's degree in Computer Information Systems and Economics from James Madison University (Class of 1992)
+Master's degree in Business Administration from George Washington University
+College Experiences and Impact:
+At James Madison University, Warden developed both technical skills in computer information systems and business knowledge through her economics studies. This dual focus has been valuable in her leadership of a technology-driven defense company.
+Warden has spoken about how her programming classes at JMU taught her valuable lessons about perseverance and critical thinking: "I loved my programming classes in CIS despite the fact that you spent sleepless nights in the lab trying to get those programs to compile. It taught me a lot about how to persevere and think critically."
+As a first-generation college student, Warden's educational journey has influenced her perspective on opportunity and has led her to establish scholarship programs at JMU. Her college experience also taught her important lessons about balancing multiple responsibilities, as she volunteered in literacy programs, pledged to a business fraternity, and worked on campus in the computer lab.
+9. Christopher Kubasik - L3Harris Technologies (LHX)
+Educational Background:
+Bachelor's degree in Accounting (Magna Cum Laude) from the University of Maryland's Smith School of Business (Class of 1983)
+Completed the Systems Acquisition Management Program
+College Experiences and Impact:
+Kubasik's accounting education at the University of Maryland provided him with analytical skills and business acumen that have been valuable throughout his career in aerospace and defense. His academic excellence (graduating Magna Cum Laude) demonstrates his commitment to high performance.
+During a "CEO at Smith" event at his alma mater in 2023, Kubasik shared several key leadership principles that reflect how his education shaped his approach, including the importance of listening, putting people in positions where they can be successful, and following "four simple rules": be a hard worker, be a team player, have a great attitude, and get results.
+10. Elon Musk - SpaceX (Private)
+Educational Background:
+Started at Queen's University in Kingston, Ontario (1989)
+Transferred to University of Pennsylvania (1992)
+Earned dual bachelor's degrees in Physics and Economics from the University of Pennsylvania (1997)
+Briefly attended Stanford University for PhD program (dropped out after two days to pursue entrepreneurial ventures)
+College Experiences and Impact:
+Musk's college years were marked by entrepreneurial thinking and intellectual curiosity that foreshadowed his later career. While at Queen's University, Musk and his brother Kimbal would identify interesting people from newspapers and cold-call them to ask for lunch meetings, demonstrating his boldness and networking abilities.
+At the University of Pennsylvania, Musk demonstrated his entrepreneurial spirit by selling computer parts and building custom PCs for other students in his dorm. He said, "I could build something to suit their needs like a tricked-out gaming machine or a simple word processor that cost less than what they could get in a store. Or if their computer didn't boot properly or had a virus, I'd fix it. I could pretty much solve any problem."
+Even during college, Musk was already thinking about electric cars. At a birthday party during his college years, he reportedly said, "I think a lot about electric cars," as one of the first things he mentioned to a new acquaintance.
+Musk displayed an extraordinary work ethic and intensity during his college years. A friend recalled him saying: "If there was a way that I could not eat, so I could work more, I would not eat. I wish there was a way to get nutrients without sitting down for a meal."
+Analysis of Educational Patterns
+Institutional Diversity
+The CEOs of the top space stocks attended a diverse range of educational institutions, from elite technical schools in France to public universities in the United States. This suggests that excellence in aerospace leadership can emerge from various educational environments, not just from a select few prestigious institutions.
+Technical vs. Business Education
+A notable pattern is the balance between technical and business education. Many of these leaders have either:
+Dual degrees combining technical and business fields
+Technical undergraduate degrees followed by business-focused graduate education
+Business education complemented by specialized industry knowledge
+This hybrid approach appears to be particularly valuable in the aerospace industry, where leaders must understand both complex technical challenges and business strategy.
+International Education
+Several CEOs received their education outside the United States, particularly in France's elite engineering schools. This international dimension brings diverse perspectives to aerospace leadership and reflects the global nature of the industry.
+Formative Experiences Beyond Academics
+Many CEOs cite specific experiences during their college years that shaped their careers, including:
+Hands-on projects and programming challenges
+Entrepreneurial ventures
+Leadership in student organizations
+Military training and discipline
+Networking and relationship-building
+These experiences often taught skills not explicitly covered in the curriculum but proved valuable in their leadership careers.
+Conclusion
+The educational backgrounds of the CEOs leading the top 10 space stocks reveal both diversity and common patterns. While they attended different institutions and studied various fields, many share a combination of technical knowledge and business acumen acquired through their education.
+Their college experiences went beyond classroom learning to include formative experiences that developed leadership skills, entrepreneurial thinking, and problem-solving abilities. Many of these leaders continue to maintain connections with their alma maters and credit their education with providing a foundation for their success.
+This research suggests that aspiring aerospace leaders should consider not only acquiring technical knowledge but also developing business acumen and seeking out formative experiences that build leadership capabilities. The diverse educational paths of these successful CEOs demonstrate that there is no single "right" educational journey to aerospace leadership, but rather multiple pathways that can provide the necessary foundation for success in this complex and evolving industry.
+
+Compare UW, Berkeley, and Stanford biomedical data science programs
+
+BLAST 
+Request completed in 158.228 seconds at time (PST): 4/27/2025, 9:01:31 PM
+
+Comparison of Biomedical Data Science Programs at UW, Berkeley, and Stanford: University of Washington (UW): - There is no dedicated undergraduate or master’s degree program titled 'Biomedical Data Science.' - Relevant: 'Certificate in Computational Molecular Biology' (graduate certificate for PhD students only, interdisciplinary, strong biomedical/computational focus, in collaboration with Fred Hutchinson Cancer Research Center and various UW departments), see http://depts.washington.edu/cmolbiol/. - MS in Data Science (not specifically biomedical-focused). - Distinction: No comprehensive, degree-focused biomedical data science program, but interdisciplinary training and collaboration on certificate level for select graduate students. UC Berkeley: - Biomedical Big Data Training Program (BBD), NIH-funded, officially concluded in 2021. - Emphasis: Interdisciplinary training in data science for biomedical applications, collaboration across 8 departments, focus on statistical estimation, machine learning, scalable computing, and precision medicine. - Program ran as a year-long interdisciplinary training and capstone project, supported limited cohorts of trainees, faculty from wide biostatistics and data fields. - Distinction: Pioneering training initiative tying together multiple disciplines, now ended, no active program with the exact focus, but legacy resources and expertise remain. Stanford University: - Department of Biomedical Data Science offers active programs: MS, Graduate Certificate, graduate and postdoctoral training. - Curriculum: Comprehensive, research-focused, interdisciplinary, flexibility in admissions and focus, covering quantitative/computational methods in biomed research, open to life science, data science, clinical backgrounds. - Distinction: Only one among the three with a current, fully structured departmental graduate (MS and certificate) program in Biomedical Data Science, extensive resources and focus on leadership in the field. Full program and curriculum details available: https://dbds.stanford.edu/. Summary: - Stanford has the most robust, active, and formalized Biomedical Data Science graduate offerings. - Berkeley has legacy NIH-funded interdisciplinary training (BBD) but no active program by that name. - UW offers a specialized graduate certificate for select students and a general data science degree, but no comprehensive biomedical data science program. - Distinction: Stanford stands out for its ongoing commitment and breadth of program offerings in this field.
+
+browser-use Time: 58.73s
+browser-use Cost: $0.0571
+
+Comparison of Biomedical Data Science Programs at UW, Berkeley, and Stanford:
+
+---
+
+**1. Stanford University:**
+- Program: Dedicated Department of Biomedical Data Science.
+- Degrees: Coterminal MS, PhD, specialized lab/research opportunities, prospective student support.
+- Curriculum: Strong biomedical/informatics focus, emphasis on both foundational data science and specific biomedical applications.
+- Unique: Highly interdisciplinary, industry/clinical research links, widely recognized as a leader in biomedical data science.
+
+**2. University of California, Berkeley:**
+- Program: No dedicated biomedical data science degree/program, but highly ranked for Data Science (MIDS: Master of Information and Data Science and related graduate degrees).
+- Degrees: MIDS (general), with possibility to specialize via elective choice, bioinformatics and biomedical options are present but not deeply embedded in main curriculum.
+- Curriculum: World-class data science theory and application, some biomedical options, but less of a sole focus on biomedical applications versus Stanford or UW.
+- Unique: Large, flexible program, exceptional reputation, but more generalized than strictly biomedical.
+
+**3. University of Washington (UW):**
+- Program: Interdisciplinary offerings under the Department of Biomedical Informatics and Medical Education (BIME), Biostatistics, Institute for Medical Data Science, and related departments.
+- Degrees: MS in Biomedical & Health Informatics (Data Science option), MS/PhD in Biomedical & Health Informatics, relevant data science/Biostatistics courses, participation in School of Public Health and eScience Institute.
+- Curriculum: Blend of data science theory, applied biomedical informatics, statistical and AI-driven methods. Explicit courses on biomedical data science (e.g., BIOST 544), and options to tailor curriculum toward biomedical informatics/AI.
+- Unique: Strong ties to health care, statistical/AI approaches, and emphasis on practical biomedical research.
+
+---
+
+**Summary:**
+- Stanford offers the most specialized and in-depth biomedical data science training with dedicated programs, opportunities for direct clinical/biomedical research, and international reputation in the field.
+- UW provides a wide array of interdisciplinary program options and institutes, with strong integration of biomedical data science and informatics, practical healthcare impact, and statistical/AI focus.
+- Berkeley leads in broad data science education and flexible degree structures, but its biomedical specialization is less central, though options exist via electives and research tracks.
+
+All three are excellent, but Stanford is strongest for specifically biomedical data science, UW for interdisciplinary/practical biomedical applications, and Berkeley for flexible, highly regarded broad data science training with some biomedical options.
+
+Ultimate task complete.
+
+find houses with open house this weekend in Bellevue and get me the listing with lowest price
+
+
+Data parallel:
+
+BLAST Statistics:
+  Mean: 67.37s
+  Std Dev: 12.89s
+  Min: 55.78s
+  Max: 81.25s
+
+browser-use Statistics:
+  Mean: 208.53s
+  Std Dev: 271.88s
+  Min: 49.75s
+  Max: 522.46s

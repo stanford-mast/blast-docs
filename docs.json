@@ -1,0 +1,50 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "BLAST",
+  "description": "Browser Language Agent System for Tasks - A high-performance framework for building AI applications with browser automation",
+  "logo": "assets/blast_icon_only.svg",
+  "favicon": "assets/blast_icon_only.svg",
+  "colors": {
+    "primary": "#ffe067"
+  },
+  "theme": "mint",
+  "navigation": {
+    "languages": [],
+    "versions": [],
+    "tabs": [],
+    "dropdowns": [],
+    "anchors": [],
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "get-started/introduction.mdx",
+          "get-started/quickstart.mdx"
+        ]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          "guides/openai-compatible-api.mdx",
+          "guides/engine-api.mdx",
+          "guides/concurrency.mdx",
+          "guides/streaming.mdx",
+          "guides/constraints.mdx",
+          "guides/settings.mdx",
+          "guides/parallelism.mdx",
+          "guides/caching.mdx"
+        ]
+      },
+      {
+        "group": "Development",
+        "pages": [
+          "development/roadmap.mdx",
+          "development/internals.mdx",
+          "development/setup.mdx",
+          "development/contributing.mdx"
+        ]
+      }
+    ],
+    "pages": ["index.mdx"]
+  }
+}
