@@ -1,11 +1,11 @@
-# Constraints in BLAST
+---
+title: Constraints
+description: Tell BLAST its limits
+---
 
-BLAST provides a flexible constraints system to control resource usage, parallelism, and execution behavior. This guide explains how to configure constraints to optimize BLAST for your needs.
 
 <Note>
-**Quick Setup**
-
-The easiest way to configure BLAST constraints is through a YAML config file:
+**Quickstart**
 
 ```yaml
 # config.yaml
@@ -16,12 +16,12 @@ constraints:
     task: true                 # Enable parallel tasks
     data: true                 # Enable parallel data processing
 
-# Start BLAST with your config
+# Start the BLAST server with your config
 blastai serve --config config.yaml
 ```
 </Note>
 
-## Resource Constraints
+## Resources
 
 ### Memory Usage
 ```yaml
@@ -43,7 +43,7 @@ constraints:
   max_cost_per_hour: 5.00    # $5.00 per hour
 ```
 
-## Parallelism Controls
+## Parallelism
 
 BLAST supports different types of parallelism:
 
@@ -51,14 +51,12 @@ BLAST supports different types of parallelism:
 constraints:
   allow_parallelism:
     task: true        # Enable parallel subtasks
-    data: true        # Enable parallel data extraction
+    data: true        # Enable parallel web browser content extraction
     first_of_n: false # Disable first-result parallelism
   max_parallelism_nesting_depth: 1  # Maximum depth of nested parallel tasks
 ```
 
-## Model Selection
-
-Configure which models to use:
+## LLM
 
 ```yaml
 constraints:
@@ -67,102 +65,13 @@ constraints:
   allow_vision: true           # Enable vision capabilities
 ```
 
-## Browser Settings
-
-Control browser behavior:
+## Browser
 
 ```yaml
 constraints:
   require_headless: true        # Force headless mode
   share_browser_process: true   # Share browser process
 ```
-
-## Complete Configuration
-
-Here's a complete example config file:
-
-```yaml
-# config.yaml
-constraints:
-  # Resource limits
-  max_memory: "4GB"
-  max_concurrent_browsers: 4
-  max_cost_per_minute: 0.10
-  max_cost_per_hour: 5.00
-  
-  # Parallelism settings
-  allow_parallelism:
-    task: true        # Parallel subtasks
-    data: true        # Parallel data extraction
-    first_of_n: false # First-result parallelism
-  max_parallelism_nesting_depth: 1
-  
-  # Model configuration
-  llm_model: "gpt-4.1"
-  llm_model_mini: "gpt-4.1-mini"
-  allow_vision: true
-  
-  # Browser settings
-  require_headless: true
-  share_browser_process: true
-
-# Start BLAST with this config
-blastai serve --config config.yaml
-```
-
-## Constraint Reference
-
-### Resource Constraints
-- `max_memory`: Maximum memory usage (string with units)
-- `max_concurrent_browsers`: Maximum concurrent browser contexts (int)
-- `max_cost_per_minute`: Maximum cost per minute in USD (float)
-- `max_cost_per_hour`: Maximum cost per hour in USD (float)
-
-### Parallelism Settings
-- `allow_parallelism`: Dictionary controlling parallelism types
-  - `task`: Enable parallel subtasks
-  - `data`: Enable parallel data extraction
-  - `first_of_n`: Enable first-result parallelism
-- `max_parallelism_nesting_depth`: Maximum depth of nested parallel tasks
-
-### Model Configuration
-- `llm_model`: Primary LLM model identifier
-- `llm_model_mini`: Smaller LLM model for parallel processing
-- `allow_vision`: Whether to allow vision capabilities
-
-### Browser Settings
-- `require_headless`: Whether to require headless mode
-- `share_browser_process`: Whether to share browser process between contexts
-
-## Best Practices
-
-1. **Start Conservative**: Begin with conservative limits and adjust based on needs:
-   ```yaml
-   constraints:
-     max_concurrent_browsers: 2
-     max_memory: "2GB"
-   ```
-
-2. **Monitor Usage**: Use metrics to understand resource usage:
-   ```bash
-   # Start with metrics display enabled
-   blastai serve --config config.yaml
-   ```
-
-3. **Adjust for Scale**: Increase limits for larger workloads:
-   ```yaml
-   constraints:
-     max_concurrent_browsers: 8
-     max_memory: "8GB"
-     max_parallelism_nesting_depth: 2
-   ```
-
-4. **Cost Control**: Set cost limits for production use:
-   ```yaml
-   constraints:
-     max_cost_per_hour: 10.00  # $10/hour limit
-     max_concurrent_browsers: 4
-   ```
 
 ## Programmatic Configuration
 
@@ -182,6 +91,6 @@ engine = await Engine.create(
 
 ## Next Steps
 
-- Learn about [Parallelism](/guides/parallelism) features
-- Explore [Settings](/guides/settings) configuration
-- Understand [Concurrency](/guides/concurrency) management
+- Understand [Concurrency](/guides/concurrency)
+- Learn about automatic [Parallelism](/guides/parallelism)
+- Explore configuring [Settings](/guides/settings)

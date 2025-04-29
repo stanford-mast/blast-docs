@@ -1,6 +1,7 @@
-# Development Setup
-
-This guide explains how to set up BLAST for development.
+---
+title: Setup
+description: For BLAST contributors
+---
 
 ## Prerequisites
 
@@ -27,7 +28,7 @@ This guide explains how to set up BLAST for development.
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/calebwin/blast.git
+   git clone https://github.com/stanford-mast/blast.git
    cd blast
    ```
 
@@ -43,22 +44,7 @@ This guide explains how to set up BLAST for development.
 
 ## Development Server
 
-1. **Start Backend**
-   ```bash
-   # Run with debug logging
-   blastai serve engine --config dev_config.yaml
-   ```
-
-2. **Start Frontend**
-   ```bash
-   # In blastai/frontend directory
-   npm run dev
-   ```
-
-3. **Run CLI Interface**
-   ```bash
-   blastai serve cli
-   ```
+Just run `blastai serve`.
 
 ## Configuration
 
@@ -67,7 +53,7 @@ Create a development config file:
 ```yaml
 # dev_config.yaml
 settings:
-  persist_cache: false  # Disable cache persistence
+  persist_cache: false  # Disable cache persistence on disk (also use "no-cache" to disable in memory)
   blastai_log_level: "debug"
   browser_use_log_level: "debug"
 
@@ -80,10 +66,8 @@ constraints:
 
 ## Testing
 
-Run tests with pytest:
-
 ```bash
-# Run all tests
+# Run all tests (probably don't since our test suite needs to be distilled a bit)
 pytest
 
 # Run specific test file
@@ -93,30 +77,14 @@ pytest tests/test_engine.py
 pytest --cov=blastai
 ```
 
-## Code Style
-
-We use:
-- Black for Python formatting
-- isort for import sorting
-- flake8 for linting
-- mypy for type checking
-
-```bash
-# Format code
-black blastai/
-isort blastai/
-
-# Check style
-flake8 blastai/
-mypy blastai/
-```
-
 ## Debugging
 
 1. **Backend Debugging**
-   ```python
-   import logging
-   logging.getLogger('blastai').setLevel(logging.DEBUG)
+   ```yaml
+   settings:
+       persist_cache: false
+       blastai_log_level: "debug"
+       browser_use_log_level: "debug"
    ```
 
 2. **Frontend Debugging**
@@ -130,48 +98,9 @@ mypy blastai/
    constraints = Constraints(require_headless=False)
    ```
 
-## Common Issues
-
-1. **Browser Installation**
-   ```bash
-   # Reinstall browsers
-   python -m playwright install --force chromium
-   ```
-
-2. **Cache Issues**
-   ```bash
-   # Clear cache
-   rm -rf ~/.local/share/blast/cache/*
-   ```
-
-3. **Frontend Dependencies**
-   ```bash
-   # Rebuild node modules
-   cd blastai/frontend
-   rm -rf node_modules
-   npm install
-   ```
-
-## Development Workflow
-
-1. Create feature branch
-2. Make changes
-3. Run tests
-4. Format code
-5. Submit PR
-
 ## Documentation
 
-Build documentation locally:
-
-```bash
-# Install Mintlify
-npm install -g mintlify
-
-# Preview docs
-cd docs
-mintlify dev
-```
+Go to the [GitHub repo for docs](github.com/stanford-mast/blast-docs).
 
 ## Next Steps
 

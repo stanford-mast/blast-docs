@@ -1,33 +1,35 @@
-# Quickstart Guide
+---
+title: Quickstart
+description: Get started with BLAST in a minute.
+---
 
-Get started with BLAST in minutes. This guide will walk you through installation, running the server, and making your first request.
-
-## Installation
-
-Install BLAST using pip:
+## Install
 
 ```bash
 pip install blastai
 ```
 
-## Starting the Server
+## Get an OpenAI API Key 
 
-BLAST provides both a web UI and an OpenAI-compatible API server. Start both with a single command:
+```bash
+echo "OPENAI_API_KEY=sk-..." > .env
+```
+
+## Start the Server
 
 ```bash
 blastai serve
 ```
 
-This will start:
-- API server at `http://127.0.0.1:8000`
-- Web UI at `http://localhost:3000`
+## Try the UI
 
-You can also run specific components:
-- `blastai serve engine` - Run only the API server
-- `blastai serve web` - Run only the web UI
-- `blastai serve cli` - Run the CLI interface
+Open `http://localhost:3000` in your browser and try asking BLAST something totally normal like `compare the weight of the 10 heaviest gorillas and the 10 heaviest bench presses and squats ever`.
 
-## Using the API
+![BLAST in action](/assets/blast_ui_gif.gif)
+
+This frontend is a lightweight Next.js app that is simply calling the OpenAI Node.js API and reading the returned stream for screenshots and text results.
+
+## Use the API
 
 BLAST provides an OpenAI-compatible API. Here's a simple example using the Python OpenAI client:
 
@@ -36,15 +38,15 @@ from openai import OpenAI
 
 # Initialize client pointing to local BLAST server
 client = OpenAI(
-    api_key="not-needed",  # BLAST doesn't require an API key
+    api_key="not-needed",
     base_url="http://127.0.0.1:8000"
 )
 
 # Create a streaming response
 stream = client.responses.create(
-    model="not-needed",  # Model name doesn't matter, BLAST uses its own engine
-    input="Search for Python documentation and click on the first result",
-    stream=True  # Enable streaming for real-time updates
+    model="not-needed",
+    input="Compare the r/protectandserve and r/securityguard subreddits",
+    stream=True
 )
 
 # Process the stream
@@ -55,18 +57,9 @@ for event in stream:
             print(event.delta, end='', flush=True)
 ```
 
-## Using the Web UI
-
-Once you start the server with `blastai serve`, open `http://localhost:3000` in your browser to access the web interface. The UI provides:
-
-- Interactive chat interface
-- Real-time streaming of responses
-- Visual feedback for browser actions
-- Task history and management
-
 ## Next Steps
 
 - Learn about the [OpenAI-Compatible API](/guides/openai-compatible-api)
-- Explore [Engine API](/guides/engine-api) for direct access
-- Understand [Concurrency](/guides/concurrency) and [Parallelism](/guides/parallelism)
+- Understand [Concurrency](/guides/concurrency), [Caching](/guides/caching), [Parallelism](/guides/parallelism)
 - Configure [Settings](/guides/settings) and [Constraints](/guides/constraints)
+- Check out our [Roadmap](/development/roadmap)

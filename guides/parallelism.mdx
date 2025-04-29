@@ -1,11 +1,10 @@
-# Parallelism in BLAST
-
-BLAST supports multiple types of parallelism to optimize task execution. This guide explains the different parallelism features and how to use them effectively.
+---
+title: Parallelism
+description: BLAST is automatically parallel
+---
 
 <Note>
-**Quick Setup**
-
-Enable parallelism in your config:
+**Enable Parallelism**
 ```yaml
 # config.yaml
 constraints:
@@ -15,11 +14,15 @@ constraints:
     first_of_n: false  # First-result parallelism
   max_parallelism_nesting_depth: 1  # Maximum nesting depth
 ```
+
+```bash
+blastai serve --config config.yaml
+```
 </Note>
 
 ## Types of Parallelism
 
-BLAST supports three types of parallelism:
+BLAST automates four types of parallelism:
 
 ### 1. Task Parallelism
 
@@ -33,37 +36,21 @@ client = OpenAI(
     base_url="http://127.0.0.1:8000"
 )
 
-# These tasks will run in parallel
+# This will launch subtasks that run in parallel
 response = await client.responses.create(
     model="not-needed",
-    input=[
-        "Search Python docs",    # Parent task
-        "Check notifications",   # Subtask 1 (parallel)
-        "Check messages"        # Subtask 2 (parallel)
-    ],
+    input="Look up the largest gorilla in each continent",
     stream=True
 )
 ```
 
 ### 2. Data Parallelism
 
-Extract data from multiple sources concurrently:
+One of the most time-consuming steps in web browsing AI is reading and summarizing content from the web. We parallelize this by chunking and and running a smaller LLM on each chunk. Our unscientific testing shows a 5x speedup with the parallelization and 2x speedup with smaller LLM without degrading the quality of the results.
 
-```yaml
-constraints:
-  allow_parallelism:
-    data: true  # Enable data parallelism
-  max_concurrent_browsers: 4  # Limit concurrent browsers
-```
+### 3. First-of-N Parallelism
 
-This allows BLAST to:
-- Process multiple pages simultaneously
-- Extract data from multiple sources
-- Run parallel data operations
-
-### 3. First-Result Parallelism
-
-Try multiple approaches and use the first successful result:
+When enabled, BLAST runs multiple copies of each task in parallel and takes the first result that returns, early exiting the other tasks. This helps because browser-augmented LLMs have high variability in latency.
 
 ```yaml
 constraints:
@@ -71,12 +58,7 @@ constraints:
     first_of_n: true  # Enable first-result parallelism
 ```
 
-This is useful for:
-- Trying different search strategies
-- Testing multiple solutions
-- Racing between approaches
-
-## Nesting Depth
+### 4. Nested Parallelism
 
 Control how deep parallel tasks can nest:
 
@@ -87,7 +69,7 @@ constraints:
 
 Example nesting structure:
 ```
-Parent Task
+Parent Task (launched by user)
 ├── Subtask 1 (parallel)
 │   ├── Sub-subtask 1.1 (parallel)
 │   └── Sub-subtask 1.2 (parallel)
@@ -96,26 +78,7 @@ Parent Task
     └── Sub-subtask 2.2 (parallel)
 ```
 
-## Resource Management
-
-BLAST automatically manages resources for parallel execution:
-
-```yaml
-constraints:
-  max_concurrent_browsers: 4  # Limit parallel browsers
-  max_memory: "4GB"          # Limit total memory usage
-```
-
-The scheduler prioritizes tasks in this order:
-1. Tasks with cached results
-2. Tasks with cached execution plans
-3. Subtasks of running tasks
-4. Tasks with paused executors
-5. Remaining tasks (FIFO order)
-
-## Monitoring Parallel Execution
-
-Track parallel task execution through metrics:
+## Monitor Parallel Execution
 
 ```python
 metrics = await engine.get_metrics()
@@ -124,59 +87,18 @@ print(f"Active browsers: {metrics['concurrent_browsers']}")
 print(f"Memory usage: {metrics['memory_usage_gb']} GB")
 ```
 
-## Best Practices
-
-1. **Start Conservative**: Begin with basic parallelism:
-   ```yaml
-   constraints:
-     allow_parallelism:
-       task: true
-       data: false
-       first_of_n: false
-     max_concurrent_browsers: 2
-   ```
-
-2. **Monitor Resources**: Watch resource usage when scaling:
-   ```yaml
-   constraints:
-     max_memory: "4GB"
-     max_cost_per_hour: 5.00  # $5/hour limit
-   ```
-
-3. **Optimize Caching**: Use caching with parallelism:
-   ```yaml
-   settings:
-     persist_cache: true  # Keep cache between runs
-   ```
-
-4. **Handle Failures**: Implement retries for parallel tasks:
-   ```python
-   max_retries = 3
-   for attempt in range(max_retries):
-       try:
-           result = await client.responses.create(...)
-           break
-       except Exception as e:
-           print(f"Retry {attempt + 1}/{max_retries}")
-   ```
-
 ## Model Selection
 
-BLAST uses different models for parallel processing:
+BLAST automatically selects between different models for parallel processing:
 
 ```yaml
 constraints:
   llm_model: "gpt-4.1"          # Primary model
-  llm_model_mini: "gpt-4.1-mini"  # Model for parallel tasks
+  llm_model_mini: "gpt-4.1-mini"  # Model for data parallelism
 ```
-
-The mini model is used for:
-- Parallel data extraction
-- Quick decision making
-- Resource-efficient processing
 
 ## Next Steps
 
 - Configure [Settings](/guides/settings) for optimal performance
-- Learn about [Caching](/guides/caching) with parallel execution
+- Learn about [Caching](/guides/caching)
 - Understand [Constraints](/guides/constraints) for resource management

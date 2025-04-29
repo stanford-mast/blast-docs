@@ -1,50 +1,80 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "BLAST",
-  "description": "Browser Language Agent System for Tasks - A high-performance framework for building AI applications with browser automation",
-  "logo": "assets/blast_icon_only.svg",
-  "favicon": "assets/blast_icon_only.svg",
-  "colors": {
-    "primary": "#ffe067"
+  "description": "Fast and cheap web browsing AI",
+  "logo": {
+    "light": "/assets/blast_icon_only.svg",
+    "dark": "/assets/blast_icon_only.svg",
+    "href": "http://blastproject.org"
   },
-  "theme": "mint",
+  "favicon": "/assets/blast_icon_only.svg",
+  "colors": {
+    "primary": "#ffe067",
+    "light": "#ffe067"
+  },
+  "theme": "willow",
+  "appearance": {
+    "default": "dark",
+    "strict": true
+  },
+  "background": {
+    "color": {
+      "dark": "#1f1f1f",
+      "light": "#ffffff"
+    }
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "GitHub",
+      "href": "https://github.com/stanford-mist/blast"
+    },
+    "links": [
+      {
+        "label": "blastproject.org",
+        "href": "http://blastproject.org"
+      },
+      {
+        "label": "realcalebwin",
+        "href": "https://x.com/realcalebwin"
+      },
+      {
+        "label": "Discord",
+        "href": "https://discord.gg/AUMAYTAS"
+      }
+    ]
+  },
   "navigation": {
-    "languages": [],
-    "versions": [],
-    "tabs": [],
-    "dropdowns": [],
-    "anchors": [],
     "groups": [
       {
         "group": "Get Started",
         "pages": [
-          "get-started/introduction.mdx",
-          "get-started/quickstart.mdx"
+          "get-started/introduction",
+          "get-started/quickstart"
         ]
       },
       {
         "group": "Guides",
         "pages": [
-          "guides/openai-compatible-api.mdx",
-          "guides/engine-api.mdx",
-          "guides/concurrency.mdx",
-          "guides/streaming.mdx",
-          "guides/constraints.mdx",
-          "guides/settings.mdx",
-          "guides/parallelism.mdx",
-          "guides/caching.mdx"
+          "guides/openai-compatible-api",
+          "guides/engine-api",
+          "guides/concurrency",
+          "guides/streaming",
+          "guides/constraints",
+          "guides/settings",
+          "guides/parallelism",
+          "guides/caching"
         ]
       },
       {
-        "group": "Development",
+        "group": "Contributing",
         "pages": [
-          "development/roadmap.mdx",
-          "development/internals.mdx",
-          "development/setup.mdx",
-          "development/contributing.mdx"
+          "development/roadmap",
+          "development/internals",
+          "development/setup",
+          "development/contributing"
         ]
       }
-    ],
-    "pages": ["index.mdx"]
+    ]
   }
 }
