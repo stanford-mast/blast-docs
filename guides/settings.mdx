@@ -10,13 +10,56 @@ description: As you like it
 # config.yaml
 settings:
   persist_cache: true
-  blastai_log_level: "info"
-  browser_use_log_level: "info"
+  logs_dir: "blast-logs/"      # Log to files (null for terminal-only)
+  blastai_log_level: "info"    # BLAST engine log level
+  browser_use_log_level: "info" # Browser operations log level
 
 # Start BLAST with your config
 blastai serve --config config.yaml
 ```
 </Note>
+
+### LLM Provider
+
+Configure which models to use and their API keys:
+
+```yaml
+constraints:
+  # For OpenAI models:
+  llm_model: "openai:gpt-4.1"           # Main model for complex tasks
+  llm_model_mini: "openai:gpt-4.1-mini" # Model for simpler tasks
+
+  # For Google Gemini models:
+  llm_model: "google_genai:gemini-2.0-flash-exp"
+  llm_model_mini: "google_genai:gemini-2.0-flash-exp"
+```
+
+API keys can be provided in three ways:
+
+1. Environment variables:
+```bash
+export OPENAI_API_KEY=sk-...
+export OPENAI_BASE_URL=https://your-endpoint.com  # Optional
+export GOOGLE_API_KEY=AIza...  # Get from aistudio.google.com
+```
+
+2. `.env` file:
+```env
+# For OpenAI models
+OPENAI_API_KEY=sk-...
+OPENAI_BASE_URL=https://your-endpoint.com  # Optional
+
+# For Google Gemini models
+GOOGLE_API_KEY=AIza...  # Get from aistudio.google.com
+```
+
+3. Command line:
+```bash
+blastai serve --env="OPENAI_API_KEY=sk-..."
+blastai serve --env="GOOGLE_API_KEY=AIza..."
+```
+
+The system automatically detects the model provider from the prefix (`openai:` or `google_genai:`) and uses the appropriate API key.
 
 ### Secrets
 
@@ -52,13 +95,26 @@ settings:
 
 ### Logging
 
-Control log verbosity for different components:
+Control logging behavior and verbosity:
 
 ```yaml
 settings:
+  # Log file directory (set to null to log to terminal only)
+  logs_dir: "blast-logs/"
+
+  # Component log levels
   blastai_log_level: "debug"    # Logging level for BLAST
   browser_use_log_level: "info" # Logging level for browser_use
 ```
+
+When `logs_dir` is set (default: "blast-logs/"):
+- All logs go to files based on their levels
+- Only engine metrics shown in terminal
+- Log file paths shown in endpoint messages
+
+When `logs_dir` is null:
+- All logs go to terminal based on their levels
+- Engine metrics are not shown
 
 Available log levels (from most to least verbose):
 - `"debug"` - Detailed debugging information

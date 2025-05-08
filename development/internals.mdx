@@ -113,14 +113,33 @@ Settings and constraints control behavior:
 ```yaml
 settings:
   persist_cache: true
-  blastai_log_level: "info"
+  logs_dir: "blast-logs/"      # Log to files (null for terminal-only)
+  blastai_log_level: "info"    # BLAST engine log level
+  browser_use_log_level: "info" # Browser operations log level
 
 constraints:
+  # Resource limits
   max_memory: "4GB"
   max_concurrent_browsers: 4
+  
+  # Model configuration
+  llm_model: "openai:gpt-4.1"           # Main model for complex tasks
+  llm_model_mini: "openai:gpt-4.1-mini" # Model for simpler tasks
+  
+  # Parallelism settings
   allow_parallelism:
     task: true
     data: true
+```
+
+Environment variables for API keys:
+```env
+# OpenAI configuration
+OPENAI_API_KEY=sk-...
+OPENAI_BASE_URL=https://your-endpoint.com  # Optional
+
+# Google Gemini configuration
+GOOGLE_API_KEY=AIza...  # From aistudio.google.com
 ```
 
 ## Error Handling
